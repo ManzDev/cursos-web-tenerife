@@ -1,0 +1,142 @@
+// out: darkgrey.theme.min.css, autoprefixer:true, compress:true
+
+@font-face {
+  font-family: 'Accidental Presidency';
+  src: local('Accidental Presidency'),
+       url('acid.woff2') format('woff2'),
+       url('acid.woff') format('woff'),
+       url('acid.ttf') format('truetype');
+}
+
+body {
+  background: #191919;
+  color:#EEE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Accidental Presidency';
+  line-height:95%;
+}
+
+.step {
+  text-align:center;
+}
+
+.step img {
+  filter:grayscale(1);
+  animation:colormove 2s ease-in-out infinite alternate;
+}
+
+@keyframes colormove {
+  0% {
+    transform:skew(5deg) rotateX(15deg);
+    filter:grayscale(100%);
+  }
+  100% {
+    transform:skew(-5deg) rotateX(-15deg);
+    filter:grayscale(50%)
+  }
+}
+
+@keyframes growth {
+  0% { transform: skew(3deg) rotateY(-5deg) rotateX(-5deg) rotateZ(-1deg) }
+  100% { transform: skew(-3deg) rotateY(0deg) rotateX(15deg) rotateZ(1deg) }
+}
+
+.small {
+  font-size:38px;
+  line-height:48px;
+}
+
+.off {
+  opacity:0;
+  transition:all .5s linear;
+}
+
+p.warning, p.ccss, p.chtml, p.notice, p.freedom {
+  margin-top:10px;
+  font-size:28px;
+}
+
+.freedom { color:#119117 }
+.warning { color:#ee2d2d }
+.notice { color:#656565 }
+.ccss { color:#2863bd }
+.chtml { color:#f47c1a }
+
+.datainfo {
+  display:block;
+  background:linear-gradient(120deg, rgba(0,0,0, .95), rgba(0,0,0, .85));
+  box-shadow:0 0 10px 5px #000;
+  padding:50px 25px;
+  border:1px solid #AAA;
+  font-size:38px;
+  text-shadow:2px 2px 2px #111;
+  line-height:44px;
+  animation:growth 5s ease alternate infinite;
+
+  & a {
+    background: linear-gradient(to bottom, #0f7c0e 50%, #054209 50%);
+    color: #FFF;
+    text-shadow: 0 0 5px #111;
+    margin:1em 5em 0 5em;
+    padding:10px 5px;
+    display:block;
+
+    &:hover {
+      background: linear-gradient(to bottom, #016300 50%, #013304 50%);
+      box-shadow: 0 0 15px #089616
+    }
+  }
+}
+
+h1 { font-size:164px; }
+h2 { font-size:164px; color:#FFFFFF; text-shadow: 0 0 5px #000 }
+h3 { font-size:112px; color:#7d7d7d; }
+h4 { font-size:92px; color:#7d7d7d; line-height:72px }
+
+#bottom {
+  margin-top:25px;
+  height:80px;
+  background:#141414 url(banda.png) no-repeat center;
+  background-size:contain;
+}
+
+#upbar {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  background:#000;
+  border-bottom:5px solid #676767;
+  transition: background 2s ease,
+              border-bottom 3s ease;
+  height: 46px;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Accidental Presidency';
+  font-size: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px #888;
+  letter-spacing:1px;
+}
+
+#upbar.sep {
+  background:#d29600;
+  border-bottom-color:#a07300;
+}
+
+#upbar.oct {
+  background:#9b1e1a;
+  border-bottom-color:#7a1814;
+}
+
+#upbar.nov {
+  background:#601a9b;
+  border-bottom-color:#4b147a;
+}
+
+#upbar.dic {
+  background:#1a71ca;
+  border-bottom-color:#155da7;
+}

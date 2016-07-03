@@ -1,0 +1,197 @@
+// output:index.html
+doctype html
+html(lang="es")
+head
+  // Metadatos
+  title Cursos de Diseño web en Tenerife
+  meta(charset="utf-8")
+  meta(name="viewport", content="width=1024")
+  meta(name="description", content="Cursos presenciales de Diseño y Desarrollo web en Tenerife. Organizados por la Oficina de Software Libre (OSL) y la Fundación General de la Universidad de La Laguna (FGULL).")
+  meta(name="author", content="Manz")
+  
+  // Relaciones
+  link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic")
+  link(rel="stylesheet", href="impress.base.min.css")
+  link(rel="stylesheet", href="darkgrey.theme.min.css")
+  link(rel="icon", href="favicon.png")
+body
+  // Fallback (navegadores no compatibles)
+  div.fallback-message
+    p Tu navegador <b>no soporta HTML5</b>. Para una mejor experiencia, por favor, utiliza un navegador moderno compatible con HTML5.
+
+  // Comenzamos impress.js
+  div#impress
+    
+    div#start.step(data-x="0", data-y="0")
+      h3 CURSOS DE DISEÑO WEB
+      h5 2016-2017
+      div#bottom
+      
+    div#introduccion.step(data-x="1000", data-y="0")
+      img(src="chrome-firefox.png", alt="Introducción al Diseño web")
+      h2 INTRODUCCIÓN
+      h3 AL DISEÑO WEB
+      
+    div#introduccion-info.step(data-x="1000", data-y="0", data-z="3000")
+      div.datainfo 
+        p Adquirir unas bases sobre el diseño web y conocer los conceptos básicos que hay que manejar en este campo.
+        p.freedom No requiere conocimientos previos.
+        //a(href="#") Más información
+      
+    div#inkscape.step(data-x="2000", data-y="0")
+      img(src="inkscape.png", alt="Inkscape")
+      h2 INKSCAPE Y SVG
+      h4 ALTERNATIVA LIBRE A ADOBE ILLUSTRATOR
+
+    div#inkscape-info.step(data-x="2000", data-y="0", data-z="3000")
+      div.datainfo 
+        p Crear gráficos o documentos vectoriales y aprender a usar una alternativa libre y gratuita a Adobe Illustrator.
+        p.freedom No requiere conocimientos previos.
+        a(href="http://www.emezeta.com/cursos/diseno-grafico-inkscape-svg/") Más información      
+      
+    div#css3.step(data-x="3000", data-y="0")
+      img(src="css3.png", alt="CSS3")
+      h2 CSS3
+      h3 DISEÑO WEB
+      
+    div#css3-info.step(data-x="3000", data-y="0", data-z="3000")
+      div.datainfo 
+        p Profundizar en el diseño web con CSS3, lenguaje orientado al aspecto gráfico y visual de una página web.
+        p.freedom No requiere conocimientos previos.
+        a(href="http://www.emezeta.com/cursos/diseno-web-css3/") Más información
+      
+    div#html5.step(data-x="4000", data-y="0")
+      img(src="html5.png", alt="HTML5")
+      h2 HTML5
+      h3 DESARROLLO WEB
+      
+    div#html5-info.step(data-x="4000", data-y="0", data-z="3000")
+      div.datainfo 
+        p Conocer en profundidad todas las etiquetas HTML, aspectos multimedia y creación de formularios.
+        p.warning Se recomienda haber cursado previamente el curso de CSS3.
+        a(href="http://www.emezeta.com/cursos/desarrollo-web-html5/") Más información
+          
+    div#gh.step(data-x="5000", data-y="0")
+      img(src="growth-hacking.png", alt="Growth Hacking")
+      h2 GROWTH HACKING
+      h3 Y MARKETING DIGITAL
+      
+    div#gh-info.step(data-x="5000", data-y="0", data-z="3000")
+      div.datainfo 
+        p Técnicas y herramientas para analizar y mejorar el rendimiento de una página web y promocionarla en Internet.
+        p.freedom No requiere conocimientos previos.
+        //a(href="#") Más información      
+      
+    div#html5av.step(data-x="1000", data-y="2000")
+      img(src="html5-avanzado.png", alt="HTML5 Avanzado")
+      h2 HTML5 AVANZADO
+      h4 LIBRERÍAS/MICROFRAMEWORKS
+      
+    div#html5av-info.step(data-x="1000", data-y="2000", data-z="3000")
+      div.datainfo 
+        p Aprende a utilizar librerías y microframeworks para hacer páginas avanzadas (como esta).
+        p.warning Requiere conocimientos básicos de HTML y CSS.
+        //a(href="#") Más información
+    
+    div#css3av.step(data-x="2000", data-y="2000")
+      img(src="css3-avanzado.png")
+      h2 CSS3 AVANZADO
+      h4 PATRONES DE DISEÑO WEB
+      
+    div#css3av-info.step(data-x="2000", data-y="2000", data-z="3000")
+      div.datainfo 
+        p Taller de CSS3 para la creación de patrones, técnicas y buenas prácticas de Diseño web.
+        p.warning Se recomienda haber realizado previamente los cursos de CSS3 y HTML5.
+        //a(href="#") Más información      
+      
+    div#jsbasico.step(data-x="3000", data-y="2000")
+      img(src="js-basico.png", alt="Javascript básico")
+      h2 JAVASCRIPT
+      h3 PARA PRINCIPIANTES
+      
+    div#jsbasico-info.step(data-x="3000", data-y="2000", data-z="3000")
+      div.datainfo 
+        p Curso de Javascript para principiantes. Orientado a diseñadores web sin conocimientos de programación.
+        p.warning Se recomienda haber realizado previamente los cursos de CSS3 y HTML5.
+        //a(href="#") Más información
+      
+    div#frontend.step(data-x="4000", data-y="2000")
+      img(src="frontend.png", alt="Front-end")
+      h2 FRONT-END
+      h3 PREPROCESADORES WEB
+      
+    div#frontend-info.step(data-x="4000", data-y="2000", data-z="3000")
+      div.datainfo 
+        p Aprende a utilizar las herramientas y preprocesadores web más novedosos para simplificar tareas front-end.
+        p.warning Requiere ciertos conocimientos informáticos previos.
+        //a(href="#") Más información      
+      
+    div#js.step(data-x="5000", data-y="2000")
+      img(src="js.png", alt="Javascript")
+      h2 JAVASCRIPT
+      h3 PARA PROGRAMADORES
+      
+    div#js-info.step(data-x="5000", data-y="2000", data-z="3000")
+      div.datainfo 
+        p Aprende unas bases sólidas de programación web mediante el lenguaje de front-end Javascript.
+        p.warning Requiere conocimientos básicos de programación.
+        //a(href="#") Más información
+        
+    div#php.step(data-x="6000", data-y="2000")
+      img(src="php.png", alt="PHP")
+      h2 PHP
+      h3 PARA PRINCIPIANTES
+      
+    div#php-info.step(data-x="6000", data-y="2000", data-z="3000")
+      div.datainfo 
+        p Aprende unas bases sólidas de introducción a la programación web en back-end con PHP7
+        p.warning Requiere conocimientos básicos de programación.
+        //a(href="#") Más información
+          
+    div#overview.step(data-x="3000", data-y="1000", data-scale="5")
+  
+  // Sugerencia inicial
+  div.hint
+    p Pulsa <kbd>espacio</kbd> o <kbd>&#8594;</kbd> para avanzar.
+    
+  // Elementos fijos
+  div#upbar
+    
+  script(src="impress.min.js")
+  script.
+    var upbar = document.querySelector('#upbar')
+    impress().init();
+    
+    document.addEventListener("impress:stepenter", function(e) {
+      
+      switch (e.target.id) {
+        case 'introduccion':
+        case 'inkscape':
+        case 'css3':        
+          upbar.className = 'sep';
+          upbar.textContent = 'Septiembre';
+          break;
+        case 'html5':
+        case 'html5av':
+        case 'gh':
+          upbar.className = 'oct';
+          upbar.textContent = 'Octubre';
+          break;
+        case 'css3av':
+        case 'jsbasico':
+        case 'frontend':        
+          upbar.className = 'nov';
+          upbar.textContent = 'Noviembre';
+          break;
+        case 'js':
+        case 'php':
+          upbar.className = 'dic';
+          upbar.textContent = 'Diciembre';
+          break;
+        case 'overview':
+          upbar.className = 'sep';
+          upbar.textContent = 'Cursos 2016-2017'
+          break;
+      }
+      
+    });
